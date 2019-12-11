@@ -116,6 +116,7 @@ function create(projectName) {
             ));
         }
         const res = await request({
+            // 借用一个已发布npm的工具的版本号
             url: 'https://registry.npmjs.org/@datastory/ds-cli',
             method:'GET'
         });
